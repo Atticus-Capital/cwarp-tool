@@ -36,7 +36,7 @@ def retrieve_yhoo_data(ticker='spy', start_date = '2007-07-01', end_date = '2020
         st.write(f"Sorry, Data not available for {ticker} please refresh the app.")
 
 def main():
-    st.sidebar.image('Artemis.png')
+    st.sidebar.image('Atticus.png')
     st.header("CWARP\u2122 Calculator")
 
     st.markdown("""
