@@ -3,3 +3,4 @@ numpy
 matplotlib
 seaborn
 yfinance
+streamlit==0.81.0
