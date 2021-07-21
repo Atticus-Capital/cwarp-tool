@@ -36,7 +36,7 @@ def retrieve_yhoo_data(ticker='spy', start_date = '2007-07-01', end_date = '2020
         st.write(f"Sorry, Data not available for {ticker} please refresh the app.")
 
 def main():
-    st.sidebar.image('Atticus.png')
+    st.sidebar.image('Artemis.png')
     st.header("CWARP\u2122 Calculator")
 
     st.markdown("""
@@ -48,15 +48,12 @@ def main():
     """, unsafe_allow_html=True)
 
     body = """<p class="small-font">ANY AND ALL CONTENTS OF THIS STREAMLIT APPLICATION ARE FOR INFORMATIONAL PURPOSES ONLY. NEITHER THE INFORMATION PROVIDED HEREIN NOR ANY OTHER DATA OR RESOURCES RELATED TO CWARP\u2122 SHOULD BE CONSTRUED AS A GUARANTEE OF ANY PORTFOLIO PERFORMANCE USING CWARP\u2122 OR ANY OTHER METRIC DEVELOPED OR DISCUSSED HEREIN. ANY INDIVIDUAL WHO USES, REFERENCES OR OTHERWISE ACCESSES THE WEBPAGE OR ANY OTHER DATA, THEORY, FORMULA, OR ANY OTHER INFORMATION CREATED, USED, OR REFERENCED BY ARTEMIS DOES SO AT THEIR OWN RISK AND, BY ACCESSING ANY SUCH INFORMATION, INDEMNIFIES AND HOLDS HARMLESS ARTEMIS CAPITAL MANAGEMENT LP, ARTEMIS CAPITAL ADVISERS LP, AND ALL OF ITS AFFILIATES (TOGETHER, “ARTEMIS”) AGAINST ANY LOSS OF CAPITAL THEY MAY OR MAY NOT INCUR BY UTILIZING SUCH DATA. ARTEMIS DOES NOT BEAR ANY RESPONSIBILITY FOR THE OUTCOME OF ANY PORTFOLIO NOT DIRECTLY OWNED AND/OR MANAGED BY ARTEMIS.</p>
-
 CWARP\u2122, like the Sharpe or Sortino Ratios, is a number that quantifies the attractiveness of a prospective asset.
 Like the Sharpe Ratio, the more positive the CWARP\u2122 the more attractive an asset.
-
 Sharpe Ratios have the problem that the best portfolio isn't always built from a combination of assets which have the best Sharpe Ratios.
 In fact it is possible that between assets with three Sharpe Ratios $S_a < S_b < S_c$, the best portfolio is built from
 the two weaker assets $S_a, S_b$. Reliance on this simple number has lead to underdiversified, fragile portfolios.
 The whole is not the sum of the parts.
-
 To improve the situation, CWARP\u2122 $\chi$ measures the attractiveness of a portfolio after an asset is added.
 Here RMDD is the Return to Max-Drawdown Ratio, and n and p represent the new and old portfolio respectively :
 """
